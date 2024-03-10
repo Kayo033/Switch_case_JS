@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time de Futebol</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 105);
+            color: black;
+            font: normal 15pt Arial;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        section {
+            background-color: rgb(156, 150, 142);
+            width: 500px;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            margin: auto;
+        }
+
+        #valor {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Time de Futebol com a letra...</h1>
+
+    <section>
+        <p>Digite uma letra para descobrir o Time: <input type="text" name="txt" id="txt" value=""></p>
+        <button onclick="busca()">Buscando...</button>
+        <div id="valor">saida...</div>
+    </section>
+
+    <script>
+        function busca() {
+            entrada = document.getElementById('txt');
+            entrada_user = entrada.value;
+            console.log(entrada_user); // TESTE
+            letra_maiuscula = entrada_user.toUpperCase();
+            saida = document.getElementById('valor');
+
+            // saida.innerHTML += ` a letra digitada é <strong>${letra_maiuscula}</strong>`;
+
+            switch (letra_maiuscula) {
+                case 'A':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>ATLETICO-MG!</strong>`;
+                    break;
+                case 'B':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>BOTAFOGO!</strong>`;
+                    break;
+                case 'C':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>CORINTHIANS!</strong>`;
+                    break;
+                case 'D':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>DUQUE DE CAXIAS (RJ)!</strong>`;
+                    break;
+                case 'E':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>ESPORTIVA (AL)!</strong>`;
+                    break;
+                case 'F':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>FLAMENGO!</strong>`;
+                    break;
+                case 'G':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>GRÊMIO!</strong>`;
+                    break;
+                case 'H':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>HUMAITÁ (AC)!</strong>`;
+                    break;
+                case 'I':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>INTERNACIONAL!</strong>`;
+                    break;
+                case 'J':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>JUVENTUDE (RS)!</strong>`;
+                    break;
+                case 'K':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>KABURÉ (TO)!</strong>`;
+                    break;
+                case 'L':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>LONDRINA (PR)!</strong>`;
+                    break;
+                case 'M':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>MIRASSOL (SP)!</strong>`;
+                    break;
+                case 'N':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>NAÚTICO (PE)!</strong>`;
+                    break;
+                case 'O':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>OPERÁRIO (PR)!</strong>`;
+                    break;
+                case 'P':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>PALMEIRAS!</strong>`;
+                    break;
+                case 'Q':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>QUIXADÁ (CE)!</strong>`;
+                    break;
+                case 'R':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>RB BRAGANTINO (SP)!</strong>`;
+                    break;
+                case 'S':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>SÃO PAULO!</strong>`;
+                    break;
+                case 'T':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>TOMBENSE (MG)!</strong>`;
+                    break;
+                case 'U':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>URT (MG)!</strong>`;
+                    break;
+                case 'V':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>VASCO!</strong>`;
+                    break;
+                case 'W':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>WENCESLAUENSE (SP)!</strong>`;
+                    break;
+                case 'X':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>XV DE PIRACICABA (SP)!</strong>`;
+                    break;
+                case 'Y':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>YPIRANGA (RS)!</strong>`;
+                    break;
+                case 'Z':
+                    saida.innerHTML = `Com a letra ${letra_maiuscula} temos o <strong>ZUMBI (AL)!</strong>`;
+                    break;
+                default:
+                    saida.innerHTML = `Alguma coisa deu errado, com o que você digitou. O que é isso ${letra_maiuscula} ???`;
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
